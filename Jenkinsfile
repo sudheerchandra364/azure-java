@@ -20,7 +20,7 @@ node {
   
     stage('deploy') {
       def resourceGroup = 'azure1_group'
-      def webAppName = 'workshop'
+      def webAppName = 'workshop2-java_group'
       // login Azure
       withCredentials([usernamePassword(credentialsId: 'azure-java', passwordVariable: 'AZURE_CLIENT_SECRET', usernameVariable: 'AZURE_CLIENT_ID')]) {
        sh '''
